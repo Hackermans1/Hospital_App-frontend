@@ -1,0 +1,88 @@
+.doctoravailabilitycss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #c0ddef;
+    font-family: Arial, sans-serif;
+}
+
+.alldaycss {
+    background-color: #85c8ef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.timeslotcss {
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: 120px;
+}
+
+.registerselect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 16px;
+}
+
+.morningcss, .afternooncss, .eveningcss {
+    margin-bottom: 20px;
+}
+
+.cssh3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.csslabel1, .csslabel2 {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.cssinput1, .cssinput2 {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cssinput2 {
+    margin-right: 0;
+}
+
+.updatebutton {
+    width: 30%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.updatebutton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .cssinput1, .cssinput2 {
+        width: 100%;
+        margin-right: 0;
+    }
+}

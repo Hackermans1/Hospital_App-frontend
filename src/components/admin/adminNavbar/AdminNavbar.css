@@ -1,0 +1,55 @@
+.adminnavbar {
+  height: 70px;
+  background-color: #499bf3;
+}
+
+.adminnavbar31 {
+  display: flex;
+}
+
+.adminnavbar311,
+.adminnavbar312 {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+
+.adminnavbar311 a,
+.adminnavbar312 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.adminnavbar311 a:hover,
+.adminnavbar312 a:hover {
+  color: #00bcd4;
+}
+.adminlogout {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  height: 32px;
+  width: 80px;
+}
+.adminlogout:hover {
+  background-color: rgb(34, 48, 14);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .adminnavbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .adminnavbar31 {
+    flex-direction: column;
+  }
+
+  .adminnavbar311,
+  .adminnavbar312 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

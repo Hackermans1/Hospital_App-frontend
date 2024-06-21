@@ -1,0 +1,98 @@
+.footer {
+    display: flex;
+    height: 250px;
+    margin-top: 90px;
+    background-color: whitesmoke;
+}
+
+.line {
+    margin-left: 70px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+}
+
+.firstdiv {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.ll {
+    text-align: left;
+    display: block;
+    margin-left: 70px;
+    text-decoration: none;
+    color: black;
+}
+
+.seconddiv {
+    margin-top: 50px;
+    width: 34%;
+}
+
+.thirddiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 33%;
+    margin-right: 0px;
+}
+
+.bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.barimg {
+    margin-right: 0px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar1 {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .line {
+        margin-left: 0;
+    }
+
+    .firstdiv,
+    .seconddiv,
+    .thirddiv {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .ll,
+    .bar,
+    .bar1 {
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bar1 {
+        margin-bottom: 20px;
+    }
+}

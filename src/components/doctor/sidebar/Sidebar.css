@@ -1,0 +1,39 @@
+.doctorsidebar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px 0;
+    background-color: #85c8ef;
+}
+
+.doctoricon {
+    display: block;
+    margin-bottom: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.doctoricon:hover {
+    background-color: #499bf3;
+}
+
+.doctoricon a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctoricon a:hover {
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.doctoricon a.active {
+    background-color: #499bf3;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

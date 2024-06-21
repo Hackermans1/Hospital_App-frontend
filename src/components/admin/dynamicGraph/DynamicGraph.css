@@ -1,0 +1,43 @@
+.dynamic-graph {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.dynamic-graph h1 {
+  margin-bottom: 20px;
+}
+
+.dynamic-graph .chart-container {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .dynamic-graph {
+    width: 95%;
+  }
+
+  .dynamic-graph h1 {
+    font-size: 1.5em;
+  }
+
+  .dynamic-graph .chart-container {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-graph {
+    width: 100%;
+  }
+
+  .dynamic-graph h1 {
+    font-size: 1.2em;
+  }
+
+  .dynamic-graph .chart-container {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+.doctornavbar {
+  height: 70px;
+  background-color: #499bf3;
+}
+
+.doctornavbar31 {
+  display: flex;
+}
+
+.doctornavbar311,
+.doctornavbar312 {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+
+.doctornavbar311 a,
+.doctornavbar312 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.doctornavbar311 a:hover,
+.doctornavbar312 a:hover {
+  color: #00bcd4;
+}
+.doctorlogout {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  height: 32px;
+  width: 80px;
+}
+.doctorlogout:hover {
+  background-color: rgb(34, 48, 14);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .doctornavbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .doctornavbar31 {
+    flex-direction: column;
+  }
+
+  .doctornavbar311,
+  .doctornavbar312 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

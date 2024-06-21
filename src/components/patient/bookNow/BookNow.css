@@ -1,0 +1,35 @@
+.doctor-availability-item {
+    margin-top: 20px;
+  }
+
+  .doctor-availability-item h4{
+    color:darkslategray;
+  }
+  .bookbuttondashboardt{
+    color: white;
+    height: 40px;
+    width: 130px;
+    border: none;
+    border-radius: 80px;
+    background-color: rgb(67, 67, 194);
+  }
+  .booknowbutton {
+    background-color: #4caf50; 
+    border: none; 
+    color: white; 
+    padding: 3px 8px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 5px; 
+    height: 30px;
+    border-radius: 50px;
+  }
+  
+  .booknowbutton:disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+  }
+  

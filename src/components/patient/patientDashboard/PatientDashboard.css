@@ -1,0 +1,53 @@
+.patientdashboard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    background-color: #c0ddef;
+}
+
+.itemclass {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
+    border-radius: 20px;
+    background-color: #85c8ef;
+}
+
+.patientdashboardimage {
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    border-radius: 80px;
+}
+
+.bookbuttondashboard {
+    color: white;
+    height: 40px;
+    width: 130px;
+    border: none;
+    border-radius: 80px;
+    margin-top: 120px;
+    margin-left: 200px;
+    background-color: rgb(67, 67, 194);
+}
+
+.detailscss {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.detailscss p {
+    margin: 5px;
+    float: left;
+}
+.detailscss h4 {
+    margin: 5px;
+    float: left;
+    color: rgb(67, 67, 194);
+}

@@ -1,0 +1,50 @@
+.navbar1 {
+    height: 40px;
+    margin-bottom: 0.5px;
+    background-color: whitesmoke;
+}
+.n11 {
+    margin-left: 70px;
+    height: 40px;
+    float: left;
+    display: flex;
+}
+.hnav1 {
+    margin-top: 6px;
+    height: 50px;
+    margin-right: 12px;
+}
+.n12 {
+    margin-right: 60px;
+    height: 45px;
+    float: right;
+    display: flex;
+}
+.hnav2 {
+    height: 50px;
+    margin: 3px;
+}
+.n12 .himg {
+    height: 30px;
+}
+.himg {
+    height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar1 {
+        height: 60px;
+    }
+
+    .n11 {
+        margin-left: 20px; 
+    }
+
+    .n12 {
+        margin-right: 20px;
+    }
+
+    .himg {
+        height: 25px;
+    }
+}

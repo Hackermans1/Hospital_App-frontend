@@ -1,0 +1,10 @@
+.patientrightcontent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    position: fixed;
+    background-color: #f0f0f0;
+    background-color: #c0ddef;
+}

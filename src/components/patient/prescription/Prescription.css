@@ -1,0 +1,70 @@
+.view-prescription {
+    padding: 20px;
+    margin-bottom: 20px;
+    max-height: 80vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.prescription-item {
+    margin-bottom: 20px;
+}
+
+.doctor-name {
+    cursor: pointer;
+    background-color: #85c8ef;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.view-prescription-right {
+    padding: 10px;
+    background-color: #aecbdb;
+    border: 1px solid #ccc;
+    max-height: 60vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.appointment-details {
+    margin-top: 10px;
+    max-height: 50vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+.appointmenth4 {
+    cursor: pointer;
+    background-color: #85c8ef;
+    padding: 5px;
+    border: 1px solid #bbb;
+}
+
+.prescription-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.prescription-table th, .prescription-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.prescription-table th {
+    background-color: #f2f2f2;
+}
+
+.downloadpdfbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4580a3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}

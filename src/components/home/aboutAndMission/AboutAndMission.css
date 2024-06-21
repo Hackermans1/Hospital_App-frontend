@@ -1,0 +1,74 @@
+.aboutandmission {
+    height: 400px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+
+.leftabout {
+    align-items: left;
+    margin-top: 30px;
+    width: 68%;
+}
+
+.leftaboutupper {
+    height: 45%;
+    margin-right: 2px;
+}
+
+.leftaboutlower {
+    height: 55%;
+    margin-right: 2px;
+}
+
+.rightabout {
+    width: 30%;
+    align-items: right;
+}
+
+.rightaboutimage {
+    margin-top: 35px;
+    width: 105%;
+    height: 90%;
+    border: 2px;
+    border-radius: 8px;
+}
+
+.aboutus {
+    text-align: left;
+    margin-top: 20px;
+}
+.aboutusstyle {
+    margin: 12px;
+}
+.visionandmission {
+    border-top: 1px solid rgb(227, 222, 222);
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutandmission {
+        flex-direction: column;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .leftabout,
+    .rightabout {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .leftaboutupper,
+    .leftaboutlower {
+        margin-right: 0;
+    }
+
+    .rightaboutimage {
+        width: 100%;
+    }
+}

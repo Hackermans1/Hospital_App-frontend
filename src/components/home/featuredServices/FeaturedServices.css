@@ -1,0 +1,85 @@
+.featuredservices {
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 70px;
+    margin-right: 60px;
+}
+
+.featuredupper {
+    height: 28%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.featuredlower {
+    display: flex;
+    height: 70%;
+}
+
+.lowerc1 {
+    align-items: left;
+    width: 25%;
+    border: 0.5px solid rgb(236, 231, 231);
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.lowerc1image {
+    width: 40%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.lowerc1h5 {
+    margin-bottom: 10px;
+}
+
+.lowerc1p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: small;
+}
+
+.lowerc2 {
+    align-items: right;
+    width: 25%;
+    border: 0.5px solid rgb(236, 231, 231);
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.lowerc3 {
+    align-items: left;
+    width: 25%;
+    border: 0.5px solid rgb(236, 231, 231);
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.lowerc4 {
+    align-items: right;
+    width: 25%;
+    border: 0.5px solid rgb(236, 231, 231);
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .featuredservices {
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .featuredlower {
+        flex-direction: column;
+    }
+
+    .lowerc1,
+    .lowerc2,
+    .lowerc3,
+    .lowerc4 {
+        width: 100%;
+        margin-right: 0;
+    }
+}

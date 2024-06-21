@@ -1,0 +1,45 @@
+.navbar3 {
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: rgb(53, 53, 212);
+}
+
+.navbar31 {
+  display: flex;
+}
+
+.navbar311,
+.navbar312 {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+
+.navbar311 a,
+.navbar312 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar311 a:hover,
+.navbar312 a:hover {
+  color: #00bcd4;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar3 {
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar31 {
+    flex-direction: column;
+  }
+
+  .navbar311,
+  .navbar312 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

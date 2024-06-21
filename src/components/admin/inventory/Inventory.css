@@ -1,0 +1,187 @@
+.inventory {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #85c8ef;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons{
+  display: flex;
+}
+
+.inventory h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inventory .action-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inventory .action-buttons button,
+.inventory .action-buttons .custom-file-upload {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4580a3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.inventory .action-buttons .custom-file-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+.inventory .action-buttons .custom-file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.inventory .action-buttons button:hover,
+.inventory .action-buttons .custom-file-upload:hover {
+  background-color: #35617a;
+}
+
+.inventory .action-buttons button:active,
+.inventory .action-buttons .custom-file-upload:active {
+  background-color: #254659;
+}
+
+.inventory table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.inventory th, .inventory td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+}
+
+.inventory th {
+  background-color: #4580a3;
+  color: #fff;
+}
+
+.inventory td {
+  background-color: #c0ddef;
+}
+
+.inventory td input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.inventory td button {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #85c8ef;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inventory td button:hover {
+  background-color: #69aed5;
+}
+
+.inventory td button:active {
+  background-color: #4580a3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .inventory {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .inventory h1 {
+    font-size: 24px;
+  }
+
+  .inventory .action-buttons button,
+  .inventory .action-buttons .custom-file-upload {
+    padding: 8px 15px;
+    font-size: 12px;
+    margin: 5px 5px;
+  }
+
+  .inventory th, .inventory td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .inventory td input {
+    width: 50px;
+  }
+
+  .inventory td button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inventory {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .inventory h1 {
+    font-size: 20px;
+  }
+
+  .inventory .action-buttons {
+    flex-direction: column;
+  }
+
+  .inventory .action-buttons button,
+  .inventory .action-buttons .custom-file-upload {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .inventory table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .inventory th, .inventory td {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .inventory td input {
+    width: 40px;
+  }
+
+  .inventory td button {
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+}

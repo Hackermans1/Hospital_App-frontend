@@ -1,0 +1,94 @@
+.notificationdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #85c8ef;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.notificationimage {
+  margin-bottom: 20px;
+}
+
+.notificationprofileimage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notificationdata {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.notificationdataleft, .notificationdataright {
+  width: 48%;
+}
+
+.notificationlabel {
+  display: flex;
+  margin: 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.notificationlabelp {
+  display: inline-block;
+  font-weight: normal;
+  color: #555;
+  margin-left: 10px;
+}
+
+.notificationprofileupdate1, .notificationprofileupdate2 {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.notificationprofileupdate2 {
+  background-color: #e74c3c;
+}
+
+.notificationprofileupdate1:hover {
+  background-color: #2980b9;
+}
+
+.notificationprofileupdate2:hover {
+  background-color: #c0392b;
+}
+
+.notificationprofileupdatelink1, .notificationprofileupdatelink2 {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .notificationdata {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .notificationdataleft, .notificationdataright {
+      width: 100%;
+  }
+
+  .notificationprofileupdate1, .notificationprofileupdate2 {
+      width: 100%;
+  }
+}

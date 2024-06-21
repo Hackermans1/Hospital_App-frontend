@@ -1,0 +1,11 @@
+.doctor {
+    background-color: blue;
+    display: flex;
+}
+.rightcontent {
+    height: 100%;
+    width: 60%;
+    border: 2px solid red;
+    border-radius: 8px;
+    background-color: red;
+}

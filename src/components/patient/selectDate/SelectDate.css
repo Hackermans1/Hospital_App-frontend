@@ -1,0 +1,39 @@
+.selectdate {
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .selectdate1 {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .selectdatebutton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 120px;
+    height: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .selectdatebutton.active {
+    background-color: red;
+    color: white;
+  }
+  .selectdatebutton.active:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .selectdatebutton:hover {
+    background-color: #2980b9;
+  }
+  
+  .timingcss {
+    margin-top: 10px;
+  }
+  
