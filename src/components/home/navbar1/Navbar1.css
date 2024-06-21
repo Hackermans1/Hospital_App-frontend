@@ -1,47 +1,62 @@
+/* Main Navigation Bar Styling */
 .navbar1 {
     height: 40px;
     margin-bottom: 0.5px;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease, background-color 0.3s ease;
+    max-height: 125vh;
 }
+
+/* Left Section Styling */
 .n11 {
-    margin-left: 70px;
-    height: 40px;
-    float: left;
     display: flex;
+    align-items: center;
+    gap: 15px;
 }
-.hnav1 {
-    margin-top: 6px;
-    height: 50px;
-    margin-right: 12px;
-}
+
+/* Right Section Styling */
 .n12 {
-    margin-right: 60px;
-    height: 45px;
-    float: right;
     display: flex;
+    align-items: center;
+    gap: 15px;
 }
-.hnav2 {
-    height: 50px;
-    margin: 3px;
+
+/* Heading Style */
+.hnav1, .hnav2 {
+    margin: 0 12px;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
 }
+
+.hnav1:hover, .hnav2:hover {
+    color: #007bff;
+}
+
+/* Image Styling */
+.himg {
+    height: 20px;
+    transition: height 0.3s ease;
+}
+
 .n12 .himg {
     height: 30px;
 }
-.himg {
-    height: 20px;
-}
 
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
     .navbar1 {
         height: 60px;
+        padding: 0 10px;
     }
 
-    .n11 {
-        margin-left: 20px; 
-    }
-
-    .n12 {
-        margin-right: 20px;
+    .n11, .n12 {
+        gap: 10px;
     }
 
     .himg {

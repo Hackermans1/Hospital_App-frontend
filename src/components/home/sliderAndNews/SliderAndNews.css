@@ -1,59 +1,71 @@
+/* Container for the slider and news section */
 .sliderandnews {
     display: flex;
     height: 350px;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 60px;
+    transition: all 0.3s ease;
 }
 
+/* Left section styling */
 .left {
-    align-items: left;
+    align-items: flex-start; /* Changed to 'flex-start' for better alignment */
     width: 60%;
     height: 350px;
 }
 
+/* Right section styling */
 .right {
     overflow-y: hidden;
     width: 40%;
     text-align: left;
+    padding: 20px; /* Added padding for better visibility */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
+/* Outer right section for news ticker */
 .outerright {
     width: 100%;
     text-align: left;
     animation: moveNews 10s linear infinite;
 }
 
+/* Inner right section styling */
 .innerright {
     display: flex;
     width: 90%;
-    margin-left: 0px;
+    margin-left: 0;
     padding: 10px;
     box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
 .innerright p {
     overflow: hidden;
     margin: 0;
     line-height: 1;
 }
+
+/* Hover effect for inner right section */
 .innerright:hover {
     background-color: #f9f9f9;
-}
-.innerright:hover {
     transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+    animation-play-state: paused;
 }
+
+/* Styling for the news content within inner right */
 .innerright .news {
     width: 80%;
     margin-left: 10px;
 }
 
+/* Styling for images within the slider */
 .images {
     width: 99%;
     height: 99%;
     border-radius: 8px;
 }
 
+/* Keyframes for news ticker animation */
 @keyframes moveNews {
     0% {
         transform: translateY(0);
@@ -63,19 +75,16 @@
         transform: translateY(-100%);
     }
 }
-.right {
-    overflow-y: hidden;
-    width: 40%;
-    text-align: left;
-    padding: 20px; /* Add padding for better visibility */
-    box-sizing: border-box; /* Include padding in width calculation */
-}
 
+/* Additional hover effect for inner right section */
 .innerright:hover {
     background-color: #f9f9f9;
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
     animation-play-state: paused;
 }
 
+/* Styling for date within inner right section */
 .innerright .date {
     margin: 0;
     width: 20%;
@@ -88,6 +97,7 @@
     box-sizing: border-box;
 }
 
+/* Media query for responsiveness */
 @media only screen and (max-width: 768px) {
     .sliderandnews {
         flex-direction: column;
@@ -99,7 +109,7 @@
     .right {
         width: 100%;
         margin-left: 0;
-    }
+    }   
 
     .innerright {
         width: 100%;

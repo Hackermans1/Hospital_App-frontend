@@ -1,7 +1,8 @@
 .navbar3 {
   height: 60px;
   margin-bottom: 10px;
-  background-color: rgb(53, 53, 212);
+  background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
 }
 
 .navbar31 {
@@ -23,7 +24,7 @@
 
 .navbar311 a:hover,
 .navbar312 a:hover {
-  color: #00bcd4;
+  color: #661962;
 }
 
 /* Media query for smaller screens */

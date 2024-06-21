@@ -1,74 +1,70 @@
 .featuredservices {
     height: 400px;
-    margin-top: 40px;
-    margin-left: 60px;
-    margin-bottom: 70px;
-    margin-right: 60px;
+    margin: 40px 60px 70px 60px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .featuredupper {
     height: 28%;
-    margin-top: 20px;
-    margin-bottom: 2px;
+    margin: 20px 0 2px 0;
 }
 
 .featuredlower {
     display: flex;
     height: 70%;
+    gap: 30px;
 }
 
-.lowerc1 {
-    align-items: left;
+.lowerc1,
+.lowerc2,
+.lowerc3,
+.lowerc4 {
+    align-items: flex-start;
     width: 25%;
-    border: 0.5px solid rgb(236, 231, 231);
+    border: 1px solid #ece7e7;
     border-radius: 8px;
-    margin-right: 30px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    background-color: #5078f2;
+background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+;
+}
+
+.lowerc1:hover,
+.lowerc2:hover,
+.lowerc3:hover,
+.lowerc4:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transform: rotate(5deg); /* Add a slight lift effect on hover */
 }
 
 .lowerc1image {
-    width: 40%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    width: 60%; /* Reduced image size */
+    margin: 10px auto 20px auto; /* Centered image */
+    display: block; /* Ensures the centering works properly */
 }
 
 .lowerc1h5 {
     margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333333;
 }
 
 .lowerc1p {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: small;
-}
-
-.lowerc2 {
-    align-items: right;
-    width: 25%;
-    border: 0.5px solid rgb(236, 231, 231);
-    border-radius: 8px;
-    margin-right: 30px;
-}
-
-.lowerc3 {
-    align-items: left;
-    width: 25%;
-    border: 0.5px solid rgb(236, 231, 231);
-    border-radius: 8px;
-    margin-right: 30px;
-}
-
-.lowerc4 {
-    align-items: right;
-    width: 25%;
-    border: 0.5px solid rgb(236, 231, 231);
-    border-radius: 8px;
+    margin: 0 20px;
+    font-size: 0.9em;
+    color: #666666;
 }
 
 @media only screen and (max-width: 768px) {
     .featuredservices {
         height: auto;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 40px 20px;
+        padding: 10px;
     }
 
     .featuredlower {
@@ -80,6 +76,6 @@
     .lowerc3,
     .lowerc4 {
         width: 100%;
-        margin-right: 0;
+        margin-bottom: 20px;
     }
 }

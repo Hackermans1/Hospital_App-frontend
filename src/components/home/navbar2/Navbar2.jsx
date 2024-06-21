@@ -3,7 +3,7 @@ import './Navbar2.css'
 import hospital from '../images/hospital.png';
 import email from '../images/email.png';
 import phone from '../images/phone.png';
-import complain from '../images/complain.jpg';
+import complain from '../images/complain.png';
 // import {Link} from 'react-router-dom'
 
 const Navbar2 = () => {

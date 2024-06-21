@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import './Login.css'
+// Login.js
+import React, { useState, useEffect } from 'react';
+import './Login.css';
 import logo from '../images/loginleftimage2.png';
+import doc from '../images/loginlogo.png'
+import sgn from '../images/sgn.png'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
-
 
 const Login = () => {
   const [registrationData, setRegistrationData] = useState({ email: "", password: "", otp: "" });
@@ -51,29 +53,24 @@ const Login = () => {
       alert('Email and password are required');
       return;
     }
-    axios.post("https://hospital-app-backend-1.onrender.com/login", registrationData).
-      then(response => {
+    axios.post("https://hospital-app-backend-1.onrender.com/login", registrationData)
+      .then(response => {
         localStorage.setItem("authToken", response.data.authToken);
         localStorage.setItem("userid", response.data.userData._id);
-        //console.log(localStorage.getItem("authToken"));
-        //console.log(response.data);
         if (response.data.userData.role === "admin") {
           navigate(`/admin/admindetails`);
-        }
-        else if (response.data.userData.role === "doctor") {
+        } else if (response.data.userData.role === "doctor") {
           navigate(`/doctor/doctordetails`);
-        }
-        else if (response.data.userData.role === "patient") {
+        } else if (response.data.userData.role === "patient") {
           navigate(`/patient/getapproveddoctors`);
-        }
-        else if (response.data.userData.role === "others") {
+        } else if (response.data.userData.role === "others") {
           navigate('/');
         }
       })
       .catch(error => {
         alert('Error logging in');
-      })
-  }
+      });
+  };
 
   const loginUsingOTP = async (e) => {
     if (!registrationData.email) {
@@ -84,14 +81,11 @@ const Login = () => {
       .then((response) => {
         if (response.data.userData.role === "admin") {
           navigate(`/admin/admindetails`);
-        }
-        else if (response.data.userData.role === "doctor") {
+        } else if (response.data.userData.role === "doctor") {
           navigate(`/doctor/doctordetails`);
-        }
-        else if (response.data.userData.role === "patient") {
+        } else if (response.data.userData.role === "patient") {
           navigate(`/patient/getapproveddoctors`);
-        }
-        else if (response.data.userData.role === "others") {
+        } else if (response.data.userData.role === "others") {
           navigate('/');
         }
       })
@@ -102,47 +96,68 @@ const Login = () => {
 
   const onChange = (event) => {
     setRegistrationData({ ...registrationData, [event.target.name]: event.target.value });
-  }
+  };
+
+  useEffect(() => {
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+      container.classList.add('right-panel-active');
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove('right-panel-active');
+    });
+
+    return () => {
+      signUpButton.removeEventListener('click', () => {});
+      signInButton.removeEventListener('click', () => {});
+    };
+  }, []);
 
   return (
     <div className='login'>
-      <div className='loginleft'>
-        <img className='loginleftimage' src={logo} alt='logo'></img>
-      </div>
-      <div className='loginright'>
-        <h1></h1>
-        <h3>Enter your login credentials</h3>
-        {!otpFlag ? (
-          <div>
-            <label className='loginlabel'>Email:</label>
-            <input className='logininput' type="email" name="email" id='l5' value={registrationData.email} onChange={onChange} placeholder="Enter your email" required />
-            <label className='loginlabel'>Password:</label>
-            <input className='logininput' type="password" name="password" id='l6' value={registrationData.password} onChange={onChange} placeholder="Enter your password" />
-            <div className="wrap">
-              <button className='loginbutton' type="submit" onClick={loginUsingPassword}> Login using Password </button>
+      <div id="container" className='container'>
+        <div className='form-container sign-up-container'>
+          <form>
+            <h1>Create Account</h1>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+        <div className='form-container sign-in-container'>
+          <form>
+            <h1>Sign in</h1>
+            
+            <input type="email" placeholder="Email" value={registrationData.email} onChange={onChange} name="email" required/>
+            <input type="password" placeholder="Password" value={registrationData.password} onChange={onChange} name="password" />
+            <p><Link to="/forgotpassword">Forgot your password?</Link></p>
+            <button type="button" onClick={loginUsingPassword}>Sign In</button>
+          </form>
+        </div>
+        <div className='overlay-container'>
+          <div className='overlay'>
+            <div className='overlay-panel overlay-left'>
+              <h1>Welcome Back!</h1>
+              <p> Log in to access your personalized dashboard and healthcare services.</p>
+              <img src={doc} alt="Descriptive text about the image" />
+              <button className='ghost' id='signIn'>Sign In</button>
             </div>
-            <div className="registerwrap">
-              <button className='registerbutton' type="submit" onClick={requestOtp}> Login using OTP </button>
+            <div className='overlay-panel overlay-right'>
+              <h1>Hello, Friend!, New to our platform?</h1>
+              <p>Join us today for a seamless and connected healthcare experience</p>
+              <img src={sgn} alt="Descriptive text about the image" />
+              <button className='ghost' id='signUp'>Sign Up</button>
             </div>
           </div>
-        ) : (
-          <div>
-            <label className='registerlabel'>Enter OTP:</label>
-            <input className='registerinput' type="text" name="otp" id='l1' value={registrationData.otp} onChange={onChange} placeholder="Enter otp" required />
-            <div className="registerwrap">
-              {(countdown > 0) && <button className='registerbutton' type="submit" onClick={loginUsingOTP}> Login using OTP </button>}
-            </div>
-            <div className="registerwrap">
-              {(countdown == 0) && <button className='registerbutton' type="button" onClick={resendOtp} disabled={countdown > 0}> Resend OTP </button>}
-              {countdown > 0 && <p>Resend OTP in {Math.floor(countdown / 60)}:{String(countdown % 60).padStart(2, '0')}</p>}
-            </div>
-          </div>
-        )}
-        <p> <Link to="/forgotpassword"> Forgot Password? </Link> </p>
-        <p>Not registered? <Link to="/register"> Create an account </Link> </p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

@@ -1,16 +1,14 @@
 .aboutandmission {
     height: 400px;
     display: flex;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-bottom: 10px;
-    margin-right: 60px;
+    margin: 10px 60px;
 }
 
 .leftabout {
-    align-items: left;
-    margin-top: 30px;
     width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .leftaboutupper {
@@ -25,42 +23,51 @@
 
 .rightabout {
     width: 30%;
-    align-items: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .rightaboutimage {
-    margin-top: 35px;
-    width: 105%;
+    width: 75%;
     height: 90%;
-    border: 2px;
+    border: 2px solid #333; /* Darker border color */
     border-radius: 8px;
+    object-fit: cover; /* Ensure image covers container */
+    align-self: flex-end; /* Align image to the end of the column */
 }
 
 .aboutus {
     text-align: left;
     margin-top: 20px;
+    font-size: 1.2rem; /* Increased font size */
+    line-height: 1.6; /* Improved readability with increased line height */
+    color: #555; /* Darker text color */
 }
+
 .aboutusstyle {
     margin: 12px;
 }
+
 .visionandmission {
     border-top: 1px solid rgb(227, 222, 222);
     text-align: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 1.2rem; /* Increased font size */
+    color: #777; /* Slightly lighter text color */
 }
 
 @media only screen and (max-width: 768px) {
     .aboutandmission {
         flex-direction: column;
         height: auto;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 10px 20px;
     }
 
     .leftabout,
     .rightabout {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .leftaboutupper,
@@ -69,6 +76,11 @@
     }
 
     .rightaboutimage {
-        width: 100%;
+        width: 50%;
+    }
+
+    .aboutus,
+    .visionandmission {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
     }
 }
