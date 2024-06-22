@@ -3,7 +3,7 @@
 .navbar2 {
     background-color: #f5f5f5; /* Light gray background */
     height: 80px;
-    margin: 0 60px 0.5px;
+    margin: 0 100 0.5px;
    
     display: flex ;
     justify-content: space-between;
@@ -29,6 +29,8 @@
 
 .navbar221 {
     margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar221 a {

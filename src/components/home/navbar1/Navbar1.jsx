@@ -4,7 +4,7 @@ import facebook from '../images/fb.png'
 import twitter from '../images/twitter.png'
 import instagram from '../images/insta.png'
 import linkedin from '../images/linkedin.png'
-import login from '../images/login.png'
+import login from '../images/file (1).png'
 import {Link} from 'react-router-dom'
 
 const Navbar1 =  ()=> {
