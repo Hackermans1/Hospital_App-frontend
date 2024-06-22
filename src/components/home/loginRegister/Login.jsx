@@ -123,9 +123,10 @@ const Login = () => {
         <div className='form-container sign-up-container'>
           <form>
             <h1>Create Account</h1>
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Enter Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
+            <input type="role" placeholder="Role" />
             <button>Sign Up</button>
           </form>
         </div>
@@ -148,8 +149,8 @@ const Login = () => {
               <button className='ghost' id='signIn'>Sign In</button>
             </div>
             <div className='overlay-panel overlay-right'>
-              <h1>Hello, Friend!, New to our platform?</h1>
-              <p>Join us today for a seamless and connected healthcare experience</p>
+              <h1>Welcome, To NIMS Hospital!, New to our platform?</h1>
+              <h2>Join us today for a seamless and connected healthcare experience</h2>
               <img src={sgn} alt="Descriptive text about the image" />
               <button className='ghost' id='signUp'>Sign Up</button>
             </div>

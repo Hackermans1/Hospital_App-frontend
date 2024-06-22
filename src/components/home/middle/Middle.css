@@ -31,7 +31,8 @@
     padding: 20px; /* Added padding for better spacing inside the cards */
     width: 25%;
     border-radius: 8px;
-    background-color: #5380FC;
+    background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
     color: white; /* Ensured text color is white for readability */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow for a subtle 3D effect */
     transition: transform 0.3s ease; /* Added transition for hover effect */
