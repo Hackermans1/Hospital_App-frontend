@@ -33,7 +33,7 @@ const Footer = () => {
         <h3 className='bar1'>Contact</h3>
         <div className='line'></div>
         <div className='bar'>
-          <div className='bar1'><img className='barimg' src={email} alt=''></img><Link to="">karancpppython@gmail.com</Link></div>
+          <div className='bar1'><img className='barimg' src={email} alt=''></img><Link to="">chaturvedi.sudarsh@gmail.comm</Link></div>
           <div className='bar1'><img className='barimg' src={phone} alt=''></img>9832826152</div>
           <div className='bar1'><img className='barimg' src={complain} alt=''></img><Link to="">Complaint</Link></div>
         </div>
