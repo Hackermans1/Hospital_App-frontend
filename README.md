@@ -1,71 +1,64 @@
-# Getting Started with Create React App
-# Edit for overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Doctor or Hospital Management System - Frontend
 
-## Available Scripts
+This is the frontend for the **Doctor or Hospital Management System**, a web application designed to manage doctors, patients, and medicines in a hospital or clinic setting. It provides an intuitive and user-friendly interface for managing appointments, patient records, and prescriptions.
 
-In the project directory, you can run:
+## 🛠️ Technologies Used
 
-### `npm start`
+- **React**: For building the user interface.
+- **HTML5**: Markup language for structuring the web content.
+- **CSS3**: Styling the application for a responsive and modern look.
+- **JavaScript**: Adding interactivity and connecting with the backend API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📦 Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps to set up and run the frontend locally.
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/krishSharma1810/Doctors-App-Frontend.git
+cd Doctors-App-Frontend
+```
 
-### `npm run build`
+### 2. Install Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Set Up Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a `.env` file in the root directory and add the following environment variables:
 
-### `npm run eject`
+```env
+REACT_APP_BACKEND_URL=your_backend_api_url
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Run the Application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The frontend will now be running at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Features
 
-## Learn More
+- **User Authentication**: Secure login and registration using JWT-based backend authentication.
+- **Dashboard**: View and manage doctors, patients, and medical records.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **API Integration**: Communicates seamlessly with the backend for real-time data updates.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 Hosted Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The frontend is live and can be accessed at: [Doctors App - Live Site](https://hospital-app-frontend-0emx.onrender.com)
+## 🤝 Contribution
 
-### Code Splitting
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📧 Contact
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or feedback, reach out via:
+- **Email**: [chaturvedi.sudarsh@gmail.com](mailto:chaturvedi.sudarsh@gmail.com)
+- **LinkedIn**: [Sudarsh Chaturvedi](https://www.linkedin.com/in/sudarsh-chaturvedi)
